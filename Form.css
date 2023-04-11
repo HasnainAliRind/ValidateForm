@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(252, 60, 166),rgb(250, 22, 83));
+}
+form{
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 480px;
+}
+
+form .tag{
+width: 100%;
+}
+
+form .DP{
+    display: flex;
+    gap: 10px;
+}
+form .DP input{
+    width: 50%;
+    padding: 7px 9px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-family: 'rota';
+}
+
+form .SP input{
+    width: 96%;
+    padding: 7px 9px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-family: 'rota';
+
+}
+form .CurrentInput::placeholder{
+    color: rgb(101, 91, 160);
+}
+
+
+form .title{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.title h3{
+    font-family: 'Montserrat';
+}
+.title p{
+    font-family: 'Rota';
+}
+
+form .btns{
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 13px;
+   
+}
+.btns button{
+    padding: 7px 21px;
+    border: none;
+    font-family: 'rota';
+    letter-spacing: 1px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btns .red-btn{
+    background-color: rgb(250, 22, 83);
+    color: white;
+}
+
+.btns .blue-btn{
+    background-color: #3F56D3;
+    color: white;
+}
+
+.red-btn:hover{
+    background-color: rgb(240, 61, 109);
+}
+.blue-btn:hover{
+    background-color: #5769d2;
+}
+
+
+.error{
+    position: absolute;
+    width: fit-content;
+    top: 0;
+    left: 35%;
+    padding: 14px 15px;
+    background-color: rgb(248, 25, 85);
+    color: white;
+    font-family: 'Montserrat';
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.868);
+    transform: scale(0.1);
+
+    pointer-events: none;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.show{
+    top: 15px;
+    pointer-events: auto;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.error span{
+    padding: 6px 15px;
+    border-radius: 50%;
+    background-color: white;
+    color: rgb(250, 22, 83);
+
+}
